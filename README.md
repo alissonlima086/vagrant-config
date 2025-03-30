@@ -144,3 +144,8 @@ config.vm.provision "shell", inline: <<-SHELL # executa um script com os seguint
   SHELL
 ```
 Aqui foi determinado que ele deve atualizar o sistema, instalar o neofetch, instalar o apache e iniciar o apache no sistema.
+
+Alternativamente, podemos criar um shell script no diretório do vagrantfile com os comandos e chamar a partir de:
+```
+config.vm.provision :shell, path: "script.sh"
+```
