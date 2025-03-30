@@ -58,4 +58,13 @@ E assim ganhamos acesso a maquina virtual
 
 ![image](https://github.com/user-attachments/assets/1ff39ccf-05a0-40ac-bf32-c4be9cc46167)
 
+---
+
+Podemos utilizar o seguinte comando para obter informações sobre as vms:
+```
+vagrant global-status
+```
+![image](https://github.com/user-attachments/assets/bf08cc3e-49a5-43d7-a9df-29ef3bc687ef)
+
+
 
