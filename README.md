@@ -6,3 +6,6 @@ Para inicializar o vagrant, vamos executar o seguinte comando no terminal, que i
 ```
 vagrant init
 ```
+
+
+Será gerado no arquivo um código com instruções
