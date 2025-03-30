@@ -1,1 +1,3 @@
-# vrgrant-a1
+```
+vagrant init
+```
