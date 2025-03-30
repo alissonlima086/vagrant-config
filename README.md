@@ -92,4 +92,6 @@ e ela será finalizada
 
 ![image](https://github.com/user-attachments/assets/67f05887-f36c-4ac4-a2c5-cd70ff2a9f07)
 
+---
 
+## Vagrantfile
