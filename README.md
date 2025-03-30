@@ -30,6 +30,6 @@ end
 ---
 
 Para rodar:
-´´´
+```
 vagrant up
-´´´
+```
