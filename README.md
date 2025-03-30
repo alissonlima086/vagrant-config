@@ -149,3 +149,12 @@ Alternativamente, podemos criar um shell script no diretório do vagrantfile com
 ```
 config.vm.provision :shell, path: "script.sh"
 ```
+
+Com o atual codigo rodando o apache na virtualização, podemos também acrescentar um comando para fazer o redirecionamento da porta
+```
+config.vm.network "forwarded_port", guest: 80, host: 8090
+```
+
+Tornando o apache acessivel no computador fora da virtualização:
+
+![image](https://github.com/user-attachments/assets/deb779b1-b99e-4210-98ba-002db83209df)
