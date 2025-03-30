@@ -33,3 +33,8 @@ Para rodar:
 ```
 vagrant up
 ```
+
+---
+Ao abrir o VirtualBox, é possivel ver que a vm está rodando
+![image](https://github.com/user-attachments/assets/6196845d-e242-4c4e-9671-b90ad7089cae)
+
