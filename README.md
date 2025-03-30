@@ -66,5 +66,7 @@ vagrant global-status
 ```
 ![image](https://github.com/user-attachments/assets/bf08cc3e-49a5-43d7-a9df-29ef3bc687ef)
 
+Assim podemos acessar a maquina virtual a partir de qualquer diretório passando o id da maquina:
 
+![image](https://github.com/user-attachments/assets/9dd97c05-d25e-4481-b1f4-acf6052edeb8)
 
