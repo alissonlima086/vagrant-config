@@ -35,7 +35,12 @@ vagrant up
 ```
 
 ---
-Ao abrir o VirtualBox, é possivel ver que a vm está rodando
+Ao abrir o VirtualBox, é possivel visualizar que a vm está rodando
 ---
 ![image](https://github.com/user-attachments/assets/6196845d-e242-4c4e-9671-b90ad7089cae)
+
+---
+Podemos também abrir a vm, que seremos levados ao terminal da imagem
+---
+![image](https://github.com/user-attachments/assets/0e05f573-3760-4459-a192-175167957072)
 
