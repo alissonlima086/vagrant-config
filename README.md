@@ -50,7 +50,7 @@ Podemos acessar a maquina virtual utilizando ssh
 ```
 vagrant ssh
 ```
-(* É necessario estar no mesmo repositorio do vagrantfile)
+* É necessario estar no mesmo repositorio do vagrantfile
 
 E assim ganhamos acesso a maquina virtual
 ---
