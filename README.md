@@ -24,3 +24,4 @@ Vagrant.configure("2") do |config|
   config.vm.box = "hashicorp/bionic64"
 end
 ```
+(hashicorp/bionic64 é uma das box oficiais disponibilizada e mantida pela HashiCorp)
