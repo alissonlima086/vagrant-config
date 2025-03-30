@@ -15,3 +15,12 @@ Pode-se também utilizar o mesmo comando especificando que box deve ser utilizad
 ```
 vagrant init hashicorp/bionic64
 ```
+
+
+
+Que adicionaria no arquivo a seguinte configuração:
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+end
+```
