@@ -100,3 +100,47 @@ e ela será finalizada
 ---
 
 ## Vagrantfile
+
+Agora, para a configuração do vagrantfile, já temos uma parte do arquivo
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+end
+```
+
+Podemos agora acrescentar o nome do host:
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+  config.vm.hostname = "unitins" # altera o nome do host
+end
+```
+
+Podemos também acrescentar as configurações do virtualbox:
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+  config.vm.hostname = "unitins" # altera o nome do host
+  config.vm.provider "virtualbox" do |vb| # define as configurações no virtualbox
+    vb.memory = "1024" # configuração de memoria
+    vb.cpus = 2 # definição de núcleos do processador
+    vb.name = "comp-servicos" # define o nome da maquina no vbox
+end
+```
+
+Aqui definimos o nome do host como unitins, determinamos o uso de memoria para 1GB(1024MB), reservamos 2 nucleos da CPU e alteramos o nome da vm para comp-serviços
+
+![image](https://github.com/user-attachments/assets/260885de-ed9f-4991-8569-60b73c6fd4a6)
+
+Podemos agora adicionar também um script para ser executado ao iniciar a maquina pela primeira vez:
+```
+config.vm.provision "shell", inline: <<-SHELL # executa um script com os seguintes comandos
+  sudo apt update # atualiza o sistema
+  sudo apt install neofetch -y # instala o neofetch
+  sudo apt install apache2 -y # instala o apache
+  sudo systemctl start apache2 # inicia o apache
+  sudo systemctl enable apache2 # habilita o inicio do apache ao iniciar o sistema
+  SHELL
+```
+Aqui foi determinado que ele deve atualizar o sistema, instalar o neofetch, instalar o apache e iniciar o apache no sistema.
