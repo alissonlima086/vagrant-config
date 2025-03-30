@@ -9,3 +9,9 @@ vagrant init
 
 
 Será gerado no arquivo um código com instruções
+
+
+Pode-se também utilizar o mesmo comando especificando que box deve ser utilizada
+```
+vagrant init hashicorp/bionic64
+```
