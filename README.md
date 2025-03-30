@@ -81,6 +81,11 @@ Caso não esteja no repositório, deve-se passar o id da maquina
 
 ![image](https://github.com/user-attachments/assets/bd7f986a-0159-401b-bfe5-6005e826c141)
 
+Para reiniciar a maquina:
+```
+vagrant reload
+```
+
 E para parar a maquina o comando:
 ```
 vagrant halt
