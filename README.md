@@ -18,7 +18,7 @@ vagrant init hashicorp/bionic64
 
 
 
-Que adicionaria no arquivo a seguinte configuração:
+Que adicionaria no arquivo a seguinte configuração no vagrantfile:
 ```
 Vagrant.configure("2") do |config|
   config.vm.box = "hashicorp/bionic64"
@@ -50,6 +50,7 @@ Podemos acessar a maquina virtual utilizando ssh
 ```
 vagrant ssh
 ```
+(* É necessario estar no mesmo repositorio do vagrantfile)
 E assim ganhamos acesso a maquina virtual
 ---
 ![image](https://github.com/user-attachments/assets/12d58835-de16-420a-82de-381485f2dd95)
