@@ -158,3 +158,59 @@ config.vm.network "forwarded_port", guest: 80, host: 8090
 Tornando o apache acessivel no computador fora da virtualização:
 
 ![image](https://github.com/user-attachments/assets/deb779b1-b99e-4210-98ba-002db83209df)
+
+---
+
+## Multiplas maquinas virtuais
+
+Agora, criaremos um arquivo vagrant que configure duas maquinas virtuais, uma para um servidor web e outra para o banco de dados
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64" # define a imagem que será utilizada
+
+  # servidor web
+  config.vm.define "web" do |web|
+    web.vm.hostname = "servidor-web"
+    web.vm.network "forwarded_port", guest: 80, host: 8090
+
+    web.vm.provision "shell", inline: <<-WEB
+      apt update
+      apt install apache2 -y
+      systemctl restart apache2
+    WEB
+  end
+
+  # banco de dados
+  config.vm.define "db" do |db|
+    db.vm.hostname = "database"
+    db.vm.network "private_network", type: "static", ip: "192.168.50.10" 
+    db.vm.provision "shell", inline: <<-DB
+      apt update
+      apt install mariadb-server -y
+      systemctl restart mariadb.service
+    DB
+  end
+
+end
+
+```
+
+
+Agora podemos acessar o ssh especificando uma das maquinas
+
+```
+vagrant ssh db
+```
+
+O que nos dá acesso a maquina com o maria db
+
+![image](https://github.com/user-attachments/assets/b5e4c811-708a-40a5-8b83-5794a0e3867c)
+
+E podemos verificar o serviço
+
+![image](https://github.com/user-attachments/assets/114ee870-a34c-4c1d-84be-6b9d85948a0a)
