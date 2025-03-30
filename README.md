@@ -25,3 +25,11 @@ Vagrant.configure("2") do |config|
 end
 ```
 (hashicorp/bionic64 é uma das box oficiais disponibilizada e mantida pela HashiCorp)
+
+
+---
+
+Para rodar:
+´´´
+vagrant up
+´´´
