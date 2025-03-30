@@ -200,6 +200,9 @@ end
 
 ```
 
+Ao rodar com o provisionamento, temos agora as duas maquinas criadas e configuradas
+
+![image](https://github.com/user-attachments/assets/e4018635-c385-4f56-b4ed-818041b251a4)
 
 Agora podemos acessar o ssh especificando uma das maquinas
 
