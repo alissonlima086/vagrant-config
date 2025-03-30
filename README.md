@@ -70,3 +70,26 @@ Assim podemos acessar a maquina virtual a partir de qualquer diretório passando
 
 ![image](https://github.com/user-attachments/assets/9dd97c05-d25e-4481-b1f4-acf6052edeb8)
 
+---
+
+Para verificar o status, podemos utilizar o comando dentro do repositório do vagrantfile:
+```
+vagrant status
+```
+
+Caso não esteja no repositório, deve-se passar o id da maquina
+
+![image](https://github.com/user-attachments/assets/bd7f986a-0159-401b-bfe5-6005e826c141)
+
+E para parar a maquina o comando:
+```
+vagrant halt
+```
+
+e ela será finalizada
+
+![image](https://github.com/user-attachments/assets/30f16866-2ef8-4c50-bf0b-2593bf706684)
+
+![image](https://github.com/user-attachments/assets/67f05887-f36c-4ac4-a2c5-cd70ff2a9f07)
+
+
