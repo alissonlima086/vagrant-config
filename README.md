@@ -44,3 +44,11 @@ Podemos também abrir a vm, que seremos levados ao terminal da imagem
 ---
 ![image](https://github.com/user-attachments/assets/0e05f573-3760-4459-a192-175167957072)
 
+---
+---
+### Acessando a maquina virtual
+Podemos acessar a maquina virtual utilizando ssh
+```
+vagrant ssh
+```
+
